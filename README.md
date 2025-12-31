@@ -60,9 +60,9 @@ Block overview:
 
 Signal Description:
 
- <img width="914" height="502" alt="image" src="https://github.com/user-attachments/assets/caa0d7fc-aa35-4c39-afd0-5f1cb986b84e" />
+<img width="914" height="502" alt="image" src="https://github.com/user-attachments/assets/caa0d7fc-aa35-4c39-afd0-5f1cb986b84e" />
 
- <img width="911" height="518" alt="image" src="https://github.com/user-attachments/assets/5802b5c7-7dc8-4813-9ee3-bd6f012e97cb" />
+<img width="911" height="518" alt="image" src="https://github.com/user-attachments/assets/5802b5c7-7dc8-4813-9ee3-bd6f012e97cb" />
 
 
 Baud Rate Generator
