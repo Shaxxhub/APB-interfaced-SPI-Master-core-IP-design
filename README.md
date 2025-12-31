@@ -27,6 +27,7 @@ This module integrates all the above blocks. It:
 <img width="889" height="742" alt="image" src="https://github.com/user-attachments/assets/7ddfa05b-bcae-488c-8411-dec56e804498" />
 
 APB Slave Interface
+
 Control Register 1:
 
  <img width="865" height="142" alt="image" src="https://github.com/user-attachments/assets/ce75c18a-666d-4514-964d-77566ea5a33a" />
@@ -66,6 +67,7 @@ Signal Description:
 
 
 Baud Rate Generator
+
 •	Generates the SPI Serial Clock (sclk)
 Converts the high-frequency system clock (PCLK) into a lower-frequency serial clock suitable for SPI communication, based on user-configured baud rate selection (spr and sppr).
 •	Calculates Baud Rate Divisor
