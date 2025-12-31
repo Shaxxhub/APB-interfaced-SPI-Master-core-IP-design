@@ -44,6 +44,7 @@ Status Register: (Read only)
  <img width="870" height="146" alt="image" src="https://github.com/user-attachments/assets/4530df9d-683a-481d-ba59-efdcc18d414d" />
 
 Data register:
+
  <img width="882" height="138" alt="image" src="https://github.com/user-attachments/assets/779a5a07-0bf9-41e7-8f79-68c055017a41" />
 
 Block overview:
