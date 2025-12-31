@@ -70,15 +70,19 @@ Baud Rate Generator
 
 •	Generates the SPI Serial Clock (sclk)
 Converts the high-frequency system clock (PCLK) into a lower-frequency serial clock suitable for SPI communication, based on user-configured baud rate selection (spr and sppr).
-•	Calculates Baud Rate Divisor
-Computes and outputs a 12-bit BaudRateDivisor value that determines the division factor for generating sclk.
-•	Supports SPI Operational Modes
-Controls clock behavior according to spi_mode (Run, Wait, Stop) and spiswai (Stop in Wait), enabling power-saving and controlled operation in embedded systems.
+
+•	Calculates Baud Rate Divisor, Computes and outputs a 12-bit BaudRateDivisor value that determines the division factor for generating sclk.
+
+•	Supports SPI Operational Modes Controls clock behavior according to spi_mode (Run, Wait, Stop) and spiswai (Stop in Wait), enabling power-saving and controlled operation in embedded systems.
+
 •	Handles cpol (Clock Polarity) and cpha (Clock Phase) to align the sclk and data sampling as per SPI mode 0, 1, 2, or 3.
+
 •	Provides Control Flags for Data Timing
-o	flag_low / flag_high: Indicate when to receive MISO data based on clock configuration.
-o	flags_low / flags_high: Indicate when to send MOSI data based on clock configuration.
-These flags synchronize data movement between the SPI controller and the shift register.
+
+   o	flag_low / flag_high: Indicate when to receive MISO data based on clock configuration.
+
+   o	flags_low / flags_high: Indicate when to send MOSI data based on clock configuration.These flags synchronize data movement between the SPI controller and the shift register.
+
 •	Ensures data is sampled and transmitted at correct clock edges, depending on the SPI mode, avoiding timing violations and miscommunication.
 
 Block Overview:
@@ -93,12 +97,19 @@ Signal Description:
 Shift register
 
 •	The shift register allows parallel data (8-bit in SPI) to be shifted out serially on the MOSI line during transmission.
+
 •	Simultaneously, it receives serial data from the MISO line and reconstructs it into parallel form.:
+
 •	With each clock cycle, the register shifts data by one bit, either from MSB to LSB or vice versa, depending on the configured bit-order (e.g., LSBFE – Least Significant Bit First Enable).
+
 •	The direction of shifting is configurable to support multiple SPI data formats.
+
 •	Shifting occurs synchronously with the SPI clock (SCK), whose polarity (CPOL) and phase (CPHA) determine the active clock edge for data sampling and shifting.
+
 •	The shift register ensures that 8 bits of data are fully transmitted and received before signalling transfer completion.
+
 •	It also interacts with control logic to manage when to send or latch data.
+
 •	In full-duplex SPI mode, the shift register simultaneously shifts out data on MOSI and shifts in data from MISO, enabling efficient bidirectional communication.
 
 
@@ -110,6 +121,7 @@ Block Overview:
 Signal Description:
 
  <img width="905" height="615" alt="image" src="https://github.com/user-attachments/assets/82b6afdf-cd15-489d-b6b1-4516e32e9862" />
+
 
 
 SPI Slave Control Select 
@@ -140,7 +152,8 @@ Signal description:
  <img width="893" height="417" alt="image" src="https://github.com/user-attachments/assets/175b496f-47da-4510-be43-5b79909835b8" />
 
 
- 
+
+ 
 SPI Top Block
 Block Overview:
 
