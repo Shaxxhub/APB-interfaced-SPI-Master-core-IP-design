@@ -28,19 +28,24 @@ This module integrates all the above blocks. It:
 
 APB Slave Interface
 Control Register 1:
+
  <img width="865" height="142" alt="image" src="https://github.com/user-attachments/assets/ce75c18a-666d-4514-964d-77566ea5a33a" />
 
 Control Register 2:
+
  <img width="878" height="150" alt="image" src="https://github.com/user-attachments/assets/20960ef2-9877-4405-aa6b-ec686d84e651" />
 
 Baud rate register:
+
  <img width="892" height="147" alt="image" src="https://github.com/user-attachments/assets/af3e84d1-1bd2-4025-8b98-5ce3c5a89ba2" />
 
 SPPR2–SPPR0 — SPI Baud Rate Preselection Bits
 SPR2–SPR0 — SPI Baud Rate Selection Bits
+
  <img width="564" height="43" alt="image" src="https://github.com/user-attachments/assets/24a54462-8426-4018-bb5e-4439721c88a5" />
 
 Status Register: (Read only)
+
  <img width="870" height="146" alt="image" src="https://github.com/user-attachments/assets/4530df9d-683a-481d-ba59-efdcc18d414d" />
 
 Data register:
@@ -48,11 +53,13 @@ Data register:
  <img width="882" height="138" alt="image" src="https://github.com/user-attachments/assets/779a5a07-0bf9-41e7-8f79-68c055017a41" />
 
 Block overview:
+
  <img width="893" height="484" alt="image" src="https://github.com/user-attachments/assets/23038fb8-b6d3-4051-84c4-9d93f9374694" />
 
 
 
 Signal Description:
+
  <img width="914" height="502" alt="image" src="https://github.com/user-attachments/assets/caa0d7fc-aa35-4c39-afd0-5f1cb986b84e" />
 
  <img width="911" height="518" alt="image" src="https://github.com/user-attachments/assets/5802b5c7-7dc8-4813-9ee3-bd6f012e97cb" />
@@ -73,9 +80,11 @@ These flags synchronize data movement between the SPI controller and the shift r
 •	Ensures data is sampled and transmitted at correct clock edges, depending on the SPI mode, avoiding timing violations and miscommunication.
 
 Block Overview:
+
  <img width="911" height="600" alt="image" src="https://github.com/user-attachments/assets/4578c2c6-648f-4a26-b08e-e1b3eee26507" />
 
 Signal Description:
+
  <img width="908" height="623" alt="image" src="https://github.com/user-attachments/assets/c765db14-909a-467e-bfdb-821b4711c5d1" />
 
 
@@ -93,9 +102,11 @@ Shift register
 
 
 Block Overview:
+
  <img width="813" height="630" alt="image" src="https://github.com/user-attachments/assets/a64aa66b-b646-474b-a42f-ea66217546bd" />
 
 Signal Description:
+
  <img width="905" height="615" alt="image" src="https://github.com/user-attachments/assets/82b6afdf-cd15-489d-b6b1-4516e32e9862" />
 
 
@@ -116,27 +127,25 @@ The SPI Slave Control Block is responsible for managing the control logic requir
 
 
 
-
-
 Block Overview:
+
  <img width="867" height="557" alt="image" src="https://github.com/user-attachments/assets/ec3ed47f-6ecc-4334-9ede-ef48899fcf26" />
 
 
 
 Signal description:
+
  <img width="893" height="417" alt="image" src="https://github.com/user-attachments/assets/175b496f-47da-4510-be43-5b79909835b8" />
 
 
  
 SPI Top Block
 Block Overview:
+
  <img width="1056" height="503" alt="image" src="https://github.com/user-attachments/assets/d3388fda-4b5a-4c0e-b67c-a76076779c70" />
 
 
-Synthesis:
- <img width="1047" height="451" alt="image" src="https://github.com/user-attachments/assets/ae84956b-254b-444b-96fd-75cfaf5ff4c9" />
-
-
 Conclusion
+
 This SPI project demonstrates a complete Serial Peripheral Interface implementation featuring an integrated APB (Advanced Peripheral Bus) interface. The modular architecture encompasses a baud rate generator, shift register, control logic, and slave select functionality, effectively illustrating synchronous serial communication principles. Comprehensive simulation testing confirms proper SPI protocol operation across multiple modes and configurations, verifying reliable data exchange between master and slave devices.
 The project leverages the Verilog RTL design methodology, coupled with testbench verification, to solidify an understanding of digital design fundamentals, hardware interfacing techniques, and communication protocol development. This work establishes a robust foundation for advancing into embedded systems design, intellectual property core creation, and sophisticated VLSI engineering applications.
