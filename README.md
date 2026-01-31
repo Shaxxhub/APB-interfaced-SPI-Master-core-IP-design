@@ -164,3 +164,10 @@ Conclusion
 
 This SPI project demonstrates a complete Serial Peripheral Interface implementation featuring an integrated APB (Advanced Peripheral Bus) interface. The modular architecture encompasses a baud rate generator, shift register, control logic, and slave select functionality, effectively illustrating synchronous serial communication principles. Comprehensive simulation testing confirms proper SPI protocol operation across multiple modes and configurations, verifying reliable data exchange between master and slave devices.
 The project leverages the Verilog RTL design methodology, coupled with testbench verification, to solidify an understanding of digital design fundamentals, hardware interfacing techniques, and communication protocol development. This work establishes a robust foundation for advancing into embedded systems design, intellectual property core creation, and sophisticated VLSI engineering applications.
+
+# Attribution & Disclaimer
+
+This project was independently implemented based on standard APB and SPI protocol specifications for educational purposes.
+The architecture understanding was developed during my training period at Maven Silicon.
+All RTL code in this repository is written by me.
+Any diagrams or reference images used are credited to their respective sources and are included only for learning and demonstration purposes.
